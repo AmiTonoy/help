@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono&display=swap');
+
+html{
+	scroll-behavior: smooth;
+}
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Sono', sans-serif;
+	word-wrap: break-all;
+}
+
+body{
+	color: white;
+	/* height: 1000vh; */
+	background-color:#181818;
+}
+
+nav{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	background-color:transparent;
+	border-bottom: .2rem solid #14141423;
+	position: fixed;
+	width: 100%;
+	backdrop-filter: blur(10px);
+	background-color: #1010106a;
+
+}
+nav p{
+	cursor: pointer;
+}
+nav p span{
+	color: red;
+	font-size: 2rem;
+	line-height: 1px;
+}
+nav ul {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content:center;
+}
+nav ul li{
+}
+nav ul li a{
+	text-decoration: none;
+	color: white;
+	padding: 1rem;
+/* margin-left: .2rem; */
+	border-radius: 1rem;
+	transition: background-color,color ease .5s ;
+}
+nav ul li a:hover{
+	background-color: #101010;
+}
+
+::-webkit-scrollbar{
+display: none;
+}
+.fixScreen{
+	padding-top: 5.5rem;
+}
+.main{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.heading{
+	padding: 1rem;
+}
+.topics{
+	display: flex;
+	align-self: center;
+	flex-direction: row;
+	justify-content: center;
+	margin: 1rem;
+	width: 80%;
+}
+.edge, .oh-my-posh, .neovim{
+	background-color: #101010;
+	padding: 1rem;
+	margin: 1rem;
+	border-radius: .5rem;
+	transition: background-color ease .4s;
+}
+.edge:hover, .oh-my-posh:hover , .neovim:hover{
+	background-color: #1e1919;
+}
+
+@media (max-width:570px) {
+	nav p{
+		font-size: 2rem;
+		/* padding: rem; */
+	}
+	nav{
+	flex-direction: column;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	}
+	nav ul li{
+		margin-top: 1rem;
+	}
+	.options{
+		display: none;
+		flex-direction: column;
+		transition: opacity ease .3s;
+	}
+	.options.show{
+		display: flex;
+	}
+	.topics{
+		width: 100%;
+		justify-content: space-evenly;
+	}
+	.edge, .oh-my-posh, .neovim{
+		margin: 0;
+	}
+}
