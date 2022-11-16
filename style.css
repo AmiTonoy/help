@@ -71,6 +71,8 @@ display: none;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding-left: 10rem;
+	padding-right: 10rem;
 }
 .heading{
 	padding: 1rem;
@@ -94,7 +96,15 @@ display: none;
 	background-color: #1e1919;
 }
 
+.code{
+	display: flex;
+}
+p{
+	margin-bottom: 1rem;
+}
 @media (max-width:570px) {
+	body{
+	}
 	nav p{
 		font-size: 2rem;
 		/* padding: rem; */

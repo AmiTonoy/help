@@ -32,143 +32,71 @@
 	<!--On topics clicked the codes will be arived-->
 	<div class="code">
 		<div class="edge">
-			<code>
 				<h1>uninstall edge</h1>
         <p class="uninstallEdge">setup.exe --uninstall --system-level --verbose-logging --force-uninstall</p>
 
 		<h2>oh my posh</h2>
-		<pre>
-			================================================
-				Oh my posh in windows terminal
-			================================================
-			Hi tanvir i am you from 15/08/2022 10:10 o'clock 
-			at morning :).
-			
-			Now i am going to explain how you can install oh my posh in your windows terminal ==>
-			
-			1.install latest terminal ,
-			2.install lastest powershell,
-			3.install an windows package installer,
-			4.
-			
-			
-			
-			
-			
-			
-			use those commands:
-			
-			1.    winget install oh-my-posh
-			or ------>winget install JanDeDobbeleer.OhMyPosh -s winget
-			1.1 => Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Bypass -Force
-			2.    code $profile (if vs code is installed )
+		<p>winget install JanDeDobbeleer.OhMyPosh -s winget</p>
+		<p>Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Bypass -Force</p>
+		<p>code $profile (if vs code is installed )</p>
 				or 
-				
-				notepad $PROFILE (open that in a notepad)
+		<p>notepad $PROFILE (open that in a notepad)</p>
+		<p>oh-my-posh --init --shell pwsh --config ~\AppData\Local\Programs\oh-my-posh\themes\blueish.omp.json | Invoke-Expression
+		Set-Alias neofetch winfetch
+		Remove-Item Alias:curl
+		clear
+		</p>
 			
-			
-			3.
-				
-			oh-my-posh --init --shell pwsh --config ~\AppData\Local\Programs\oh-my-posh\themes\blueish.omp.json | Invoke-Expression
-			Set-Alias neofetch winfetch
-			Remove-Item Alias:curl
-			clear
-			
-			
-			++++++++++++++++++++++++++++
-			add new theme ?
-			change the top line code to approch new themes
-			like =>blueish.omp.json x
-				 =>
-			
-			
-			
-			oh-my-posh --init --shell pwsh --config ~\AppData\Local\Programs\oh-my-posh\themes\atomic.omp.json | Invoke-Expression
-			Set-Alias neofetch winfetch
-			Remove-Item Alias:curl
-			clear
-			
-			
-			
-			some of my favourite themes
-			multiverse-neon
-			darkblood
-			bubbles
-			amro
-			aliens
-			Alias
-					</pre>
+		<p>multiverse-neon,darkblood,bubbles,amro,aliens,Alias,</p>
 			<h2>neovim</h2>
-			<pre>
-				++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-						HEY TANVIR WELCOME 
-				++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-				
-				?HOW TO INSTALL NEOVIM AS YOUR DEFAULT CODE EDITOR?
-				->just install and use as a death txt editor or give him
-				a soul of infinte posibilitis ? ofcourse the second one :)
-				lets do this together .....
+			<p>
 				
 				
-				#i am tanvir from 9th october 2022 :)
 				
+			<p>	1.Install neovim setup or exe file from internet</p>
+			<p>	2.create a directory or folder inside this C:/Users/tanvir:)/AppData/Local/nvim<-nvim is our folder or directory </p>
+			<p>3.Create a file named init.vim and set those items</p>
+			<p>	:set number</p> 
+			<p>:set relativenumber</p>
+			<p>:set autoindent</p>
+			<p>:set tabstop=4</p>
+			<p>:set shiftwidth=4</p>
+			<p>:set smarttab</p>
+			<p>	:set softtabstop=4</p>
+			<p>	:set mouse=a</p>
+			<p>	call plug#begin()</p>
+			<p>Plug 'link of the plugin'///:) ##PluginList## :(////</p>
+			<p>	call plug#end()</p>
 				
-				###################################
-				   STEPS
-				###################################
-				1.Install neovim setup or exe file from internet
-				2.create a directory or folder inside this C:/Users/tanvir:)/AppData/Local/nvim<-nvim is our folder or directory
-				3.Create a file named init.vim and set those items=>>
+			<p>	nnoremap <C-f> :NERDTreeFocus<CR></p>
+			<p>	nnoremap <C-n> :NERDTree<CR></p>
+			<p>	nnoremap <C-t> :NERDTreeToggle<CR></p>
+			<p>nnoremap <C-l> :call CocActionAsync('jumpDefinition')<CR></p>
 				
-				____________________________________
+			<p>	"nmap <F8> :TagbarToggle<CR></p>
 				
-				|:set number 
-				|:set relativenumber
-				|:set autoindent
-				|:set tabstop=4
-				|:set shiftwidth=4
-				|:set smarttab
-				|:set softtabstop=4
-				|:set mouse=a
-				call plug#begin()
-				Plug 'link of the plugin'///:) ##PluginList## :(////
-				call plug#end()
+			<p>:set completeopt-=preview " For No Previews</p>
 				
-				nnoremap <C-f> :NERDTreeFocus<CR>
-				nnoremap <C-n> :NERDTree<CR>
-				nnoremap <C-t> :NERDTreeToggle<CR>
-				nnoremap <C-l> :call CocActionAsync('jumpDefinition')<CR>
+			<p>":colorscheme jellybeans</p>
 				
-				"nmap <F8> :TagbarToggle<CR>
-				
-				:set completeopt-=preview " For No Previews
-				
-				":colorscheme jellybeans
-				
-				let g:NERDTreeDirArrowExpandable="+"
-				let g:NERDTreeDirArrowCollapsible="~"
+			<p>let g:NERDTreeDirArrowExpandable="+"</p>
+			<p>let g:NERDTreeDirArrowCollapsible="~"</p>
 				
 				
 				
 				
-				_________________________________________
+				______________________________________
 				====================
 				:) ##PluginList## :(
 				====================
-				Plug 'https://github.com/preservim/nerdtree' " NerdTree
-				Plug 'https://github.com/vim-airline/vim-airline' " Status bar
-				Plug 'https://github.com/neoclide/coc.nvim'  "Auto complettion
-				Plug 'https://github.com/ap/vim-css-color' " CSS Color Preview
-				Plug 'https://github.com/ryanoasis/vim-devicons' " Developer Icons
-				Plug 'https://github.com/tc50cal/vim-terminal' " Vim Terminal
-				Plug 'https://github.com/preservim/tagbar' " Tagbar for code navigation // optional
-				Plug 'https://github.com/terryma/vim-multiple-cursors' " CTRL + N for multiple cursors
-				
-				
-				
-				dependencis have to be solved by the help of google
-					</pre>
-			</code>
+	Plug 'https://github.com/preservim/nerdtree' " NerdTree
+	Plug 'https://github.com/vim-airline/vim-airline' " Status bar
+	Plug 'https://github.com/neoclide/coc.nvim'  "Auto complettion
+	Plug 'https://github.com/ap/vim-css-color' " CSS Color Preview
+	Plug 'https://github.com/ryanoasis/vim-devicons' " Developer Icons
+	Plug 'https://github.com/tc50cal/vim-terminal' " Vim Terminal
+	Plug 'https://github.com/preservim/tagbar' " Tagbar for code navigation // optional
+<p>Plug 'https://github.com/terryma/vim-multiple-cursors' " CTRL + N for multiple cursors</p>			
 		</div>
 	</div>
 	</div>
